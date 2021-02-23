@@ -1,0 +1,10 @@
+
+.info{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color: aliceblue;
+    background-color: rgba(0, 18, 119, 0.808);
+padding: 20px;
+width: 20%;
+}

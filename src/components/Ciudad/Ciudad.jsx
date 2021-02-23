@@ -1,5 +1,5 @@
 import React from "react";
-
+import './Ciudad.css'
 
 export default function Ciudad({city}) {
   
@@ -8,7 +8,7 @@ if (!city){return <h1>Ciudad no encontrada</h1>}
     return (
         <div className="ciudad">
                 <div className="container">
-                    <h2>{city.name}</h2>
+                    <h2 className='title'>{city.name}</h2>
                     <div className="info">
                         <div>Temperatura: {city.temp} ºC</div>
                         <div>Clima: {city.weather}</div>

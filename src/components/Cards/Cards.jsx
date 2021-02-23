@@ -6,8 +6,8 @@ import Card from '../Card/Card.jsx';
 export default function Cards({cities, onClose}) {
   return (
     <div className='cards'>
-      {cities.map(c => <Card
-          key={c.id}
+      {cities.map((c,i) => <Card
+          key={i}
           max={c.max}
           min={c.min}
           name={c.name}
