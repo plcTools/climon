@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Route } from "react-router-dom";
 import "./App.css";
-import Nav from "../components/Nav.jsx";
-import Cards from "../components/Cards.jsx";
-import About from "../components/About.jsx";
-import Ciudad from "../components/Ciudad";
+import Nav from "../components/Nav/Nav.jsx";
+import Cards from "../components/Cards/Cards.jsx";
+import About from "../components/About/About.jsx";
+import Ciudad from "../components/Ciudad/Ciudad";
 const apiKey = "4ae2636d8dfbdc3044bede63951a019b";
 
 function App() {
@@ -41,9 +41,6 @@ function App() {
           };
 
           setCities((oldCities) => [...oldCities, ciudad]);
-          console.log('cities',cities)
-          console.log(setCities)
-        
         } else {
           alert("Ciudad no encontrada");
         }
@@ -57,11 +54,9 @@ function App() {
   function onFilter(ciudadId) {
     let ciudad = cities.filter((current) => current.id == parseInt(ciudadId));
     console.log('cities2',cities)
-          console.log(setCities)
     if (ciudad.length > 0) {
       console.log('devuelve onFilter',ciudad[0])
       return ciudad[0];
-      
     } else {
       console.log('devuelve onFilter',null)
       return null;

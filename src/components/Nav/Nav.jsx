@@ -1,7 +1,6 @@
 import React from 'react';
-//import Logo from '../components/logoHenry.png'
-import SearchBar from './SearchBar.jsx';
-import './styles/Nav.css';
+import SearchBar from '../SearchBar/SearchBar.jsx';
+import './Nav.css';
 import { Link } from 'react-router-dom' //se importa el metodo Link de react
 
 
