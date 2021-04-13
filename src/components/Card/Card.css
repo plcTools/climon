@@ -4,6 +4,8 @@
 }
 
 .card-title {
+  text-align: center;
+  width: 100%;
   margin-bottom: 15px;
 }
 
@@ -13,12 +15,20 @@
   margin-right: 8px;
   margin-top: 8px;
 }
-
+.iconoClima{
+  text-align: center;
+}
 .card-body {
   margin-top: 0px !important;
   padding-top: 0px !important;
 }
-
+.details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+}
 @media only screen and (max-width: 850px) {
   .details {
     display: flex;
